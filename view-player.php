@@ -5,7 +5,7 @@
       <tr>
          <th>ID</th>
       <th>Name</th>
-      <th>team</th>
+      <th>position</th>
         <th></th>
       </tr>
     </thead>
