@@ -6,6 +6,7 @@
          <th>ID</th>
       <th>Name</th>
       <th>league</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -16,6 +17,12 @@ while ($team = $team->fetch_assoc()) {
     <td><?php echo $team['team_id'];?></td>
     <td><?php echo $team['team_name'];?></td>
     <td><?php echo $team['team_league'];?></td>
+    <td>
+      <form method = "post" action = "team-by-league.php">
+        <input type = "hidden" name ="tid" value = "<?php echo $team['team_id'];?>">
+  <button type="submit" class="btn btn-primary">league</button>
+</form>
+    </td>
   </tr>
   <?php
   
