@@ -11,7 +11,8 @@
     </thead>
     <tbody>
       <?php
-while ($team = $team->fetch_assoc(1)) {
+while ($team = $team->fetch_assoc()) 
+{
   ?>
   <tr>
     <td><?php echo $team['team_id'];?></td>
