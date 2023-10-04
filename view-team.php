@@ -11,7 +11,7 @@
     </thead>
     <tbody>
       <?php
-while ($team = $teams->fetch_assoc()) 
+while ($team = $team->fetch_assoc()) 
 {
   ?>
   <tr>
