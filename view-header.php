@@ -27,7 +27,7 @@
         </li>
             
         <li class="nav-item">
-          <a class="nav-link" href="Get-league.php">league</a>
+          <a class="nav-link" href="get-league.php">league</a>
         </li>
         
         </ul>
