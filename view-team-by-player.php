@@ -4,7 +4,7 @@
     <thead> 
       <tr>
          <th>ID</th>
-      <th>Name</th>
+      <th>name</th>
       <th>league</th>
         <th>country</th>
       </tr>
