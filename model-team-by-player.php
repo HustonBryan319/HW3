@@ -1,5 +1,5 @@
 <?php
-function selectplayerbyteam($pid) {
+function selectteambyplayer($pid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT t.team_id, team_name, team_leauge, country FROM `team` t join league l on l.team_id = t.team_id where l.player_id=?");
