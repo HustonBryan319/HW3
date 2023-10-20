@@ -21,10 +21,51 @@ function insertteam($tname, $tleague) {
         $success = $smt->execute();
         $conn->close();
         return $success;
-         } catch (Exeption $e) {
+         } catch (Exception $e) {
         $conn->close();
         throw $e;
          }
 }
 
+function insertteam($tname, $tleague) {
+    try {
+        $conn = get_db_connection();
+        $smt = $conn->prepare("INSERT INTO 'team'('team_name', 'team_league') VALUES (PSG, Serie A)");
+        $smt->bind_param("ss", $tname, $tleague);
+        $success = $smt->execute();
+        $conn->close();
+        return $success;
+         } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+         }
+}
+
+function insertteam($tname, $tleague) {
+    try {
+        $conn = get_db_connection();
+        $smt = $conn->prepare("INSERT INTO 'team'('team_name', 'team_league') VALUES (Real Madrid, LaLiga)");
+        $smt->bind_param("ss", $tname, $tleague);
+        $success = $smt->execute();
+        $conn->close();
+        return $success;
+         } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+         }
+}
+
+function insertteam($tname, $tleague) {
+    try {
+        $conn = get_db_connection();
+        $smt = $conn->prepare("INSERT INTO 'team'('team_name', 'team_league') VALUES (Inter Miami, MLS)");
+        $smt->bind_param("ss", $tname, $tleague);
+        $success = $smt->execute();
+        $conn->close();
+        return $success;
+         } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+         }
+}
 
