@@ -16,7 +16,7 @@ function selectteam() {
 function insertteam($tname, $tleague) {
     try {
         $conn = get_db_connection();
-        $smt = $conn->prepare("INSERT INTO 'team'('team_name', 'team_league') VALUES (?, ?)");
+        $smt = $conn->prepare("INSERT INTO 'team'('team_name', 'team_league') VALUES (Barcelona, LaLiga)");
         $smt->bind_param("ss", $tname, $tleague);
         $success = $smt->execute();
         $conn->close();
